@@ -1,5 +1,6 @@
 // pages/Home.jsx
 import Accordion from "../components/ui/Accordion.tsx";
+import profilePic from "../../public/profile_pic.png";
 
 function Home() {
   const Links = [
@@ -23,7 +24,7 @@ function Home() {
             alt="Nathan's Profile Pic"
             loading="lazy"
             className="rounded-full w-36 h-36 object-cover aspect-square"
-            src="/profile_pic.png"
+            src={profilePic}
           ></img>
           <div className="text-center">
             <h1 className="">Nathan Leow</h1>

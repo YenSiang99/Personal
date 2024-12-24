@@ -10,6 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18" # Or whatever version you're using
+
       - name: Install and Build
         run: |
           cd frontend
@@ -21,3 +26,4 @@ jobs:
         with:
           folder: frontend/dist # or frontend/build depending on your build output
           branch: gh-pages # Creates a new branch for deployment
+          clean: true
