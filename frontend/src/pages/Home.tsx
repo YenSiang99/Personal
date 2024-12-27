@@ -1,6 +1,7 @@
 // pages/Home.jsx
 import Accordion from "../components/ui/Accordion.tsx";
-import profilePic from "../../public/profile_pic.png";
+// import profilePic from "../../public/profile_pic.png";
+import profilePic from "../assets/profile_pic.png";
 
 function Home() {
   const Links = [

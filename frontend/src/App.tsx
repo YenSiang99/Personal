@@ -19,7 +19,7 @@ function App() {
   // };
 
   return (
-    <Router basename="/Personal">
+    <Router basename="/Profile">
       <div className="min-h-screen">
         <Header></Header>
         <div className="p-6 pt-0">
