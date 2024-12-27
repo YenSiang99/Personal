@@ -1,7 +1,7 @@
 // pages/Home.jsx
 import Accordion from "../components/ui/Accordion.tsx";
 // import profilePic from "../../public/profile_pic.png";
-import profilePic from "../assets/profile_pic.png";
+import profilePic from "../assets/profile_pic.webp";
 
 function Home() {
   const Links = [
@@ -22,10 +22,15 @@ function Home() {
         {/* Profile  */}
         <div className="flex flex-col items-center space-y-2">
           <img
-            alt="Nathan's Profile Pic"
-            loading="lazy"
             className="rounded-full w-36 h-36 object-cover aspect-square"
             src={profilePic}
+            alt="Nathan's Profile Pic"
+            loading="lazy"
+            // width="144" // Explicitly setting width/height helps prevent layout shift
+            // height="144"
+            // className="rounded-full object-cover"
+            // src="/profile_pic.webp" // Using .webp format if possible
+            decoding="async" // Add this for better performance
           ></img>
           <div className="text-center">
             <h1 className="">Nathan Leow</h1>
